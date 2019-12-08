@@ -30,6 +30,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/recipes/:id' do
+    @recipe = Recipe.find(params[:idd])
   end
   
   delete '/recipes/:id' do
