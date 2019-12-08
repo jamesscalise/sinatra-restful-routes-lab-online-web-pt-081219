@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post 'recipes' do
+    @article = Article.create
   end
   
   get '/recipes/:id' do
